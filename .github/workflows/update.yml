@@ -1,0 +1,46 @@
+name: Update signal data
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'   # every 6 hours, off the hour to avoid GH's busy minute
+  workflow_dispatch: {}       # lets you trigger it manually from the Actions tab
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r _dev/requirements.txt
+
+      - name: Fetch latest signal data
+        env:
+          AISSTREAM_API_KEY: ${{ secrets.AISSTREAM_API_KEY }}
+        run: python3 _dev/scripts/fetch_data.py
+
+      - name: Commit updated dashboard.json
+        run: |
+          git config user.name "signal-station-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/dashboard.json
+          git diff --staged --quiet || git commit -m "data: refresh signals [skip ci]"
+          git push
+
+      - name: Upload dashboard.json to the live site via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./data/
+          server-dir: ${{ secrets.FTP_DATA_DIR }}   # e.g. /ezekiel/data/ — see README
