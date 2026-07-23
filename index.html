@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signal Station — composite crisis-indicator dashboard</title>
+<meta name="description" content="A composite early-warning dashboard tracking insider filings, search-trend panic keywords, and market volatility against their own recent baselines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanlines" aria-hidden="true"></div>
+
+<header class="station-header">
+  <div class="station-id">
+    <span class="station-id__mark">SS-03</span>
+    <span class="station-id__name">Signal Station</span>
+  </div>
+  <div class="station-sub" data-i18n="subtitle">composite anomaly index — six independent channels, one reading</div>
+</header>
+
+<main>
+
+  <section class="gauge-panel" aria-label="Current alert level">
+    <div class="gauge-wrap">
+      <svg viewBox="0 0 300 170" class="gauge">
+        <path class="gauge__track" d="M 20 160 A 130 130 0 0 1 280 160" />
+        <path class="gauge__fill gauge__fill--1" d="M 20 160 A 130 130 0 0 1 72.7 51.2" />
+        <path class="gauge__fill gauge__fill--2" d="M 72.7 51.2 A 130 130 0 0 1 150 30" />
+        <path class="gauge__fill gauge__fill--3" d="M 150 30 A 130 130 0 0 1 227.3 51.2" />
+        <path class="gauge__fill gauge__fill--4" d="M 227.3 51.2 A 130 130 0 0 1 280 160" />
+        <g id="tick-labels" font-family="'JetBrains Mono', monospace" font-size="10" fill="var(--text-muted)">
+          <text x="20" y="176" text-anchor="middle">1</text>
+          <text x="72" y="46" text-anchor="middle">2</text>
+          <text x="150" y="20" text-anchor="middle">3</text>
+          <text x="228" y="46" text-anchor="middle">4</text>
+          <text x="280" y="176" text-anchor="middle">5</text>
+        </g>
+        <line id="needle" x1="150" y1="160" x2="150" y2="45" class="gauge__needle" />
+        <circle cx="150" cy="160" r="7" class="gauge__hub" />
+      </svg>
+      <div class="gauge-readout">
+        <span class="gauge-readout__label" data-i18n="alertLevel">alert level</span>
+        <span class="gauge-readout__value" id="level-value">—</span>
+        <span class="gauge-readout__z" id="z-value">avg z —</span>
+      </div>
+    </div>
+    <p class="gauge-caption" id="generated-at">—</p>
+  </section>
+
+  <section class="channels" aria-label="Signal channels">
+
+    <article class="channel" data-channel="sec_insider_filings">
+      <div class="channel__head">
+        <span class="channel__index">01</span>
+        <h2 data-i18n="ch1_title">Insider filings</h2>
+        <span class="channel__z" data-field="z_score">—</span>
+      </div>
+      <p class="channel__desc" data-i18n="ch1_desc">Daily count of SEC Form 4 filings — insider transactions reported by public-company officers and directors.</p>
+      <div class="channel__stats">
+        <div><span class="stat-label" data-i18n="today">today</span><span class="stat-value" data-field="value">—</span></div>
+        <div><span class="stat-label" data-i18n="baseline30">30-day baseline</span><span class="stat-value" data-field="baseline_mean">—</span></div>
+      </div>
+    </article>
+
+    <article class="channel" data-channel="google_trends">
+      <div class="channel__head">
+        <span class="channel__index">02</span>
+        <h2 data-i18n="ch2_title">Search-panic basket</h2>
+        <span class="channel__z" data-field="z_score">—</span>
+      </div>
+      <p class="channel__desc" data-i18n="ch2_desc">Average Google Trends interest across a fixed keyword basket: bunker, gold storage, potassium iodide, evacuation route.</p>
+      <div class="channel__stats">
+        <div><span class="stat-label" data-i18n="today">today</span><span class="stat-value" data-field="value">—</span></div>
+        <div><span class="stat-label" data-i18n="baseline">baseline</span><span class="stat-value" data-field="baseline_mean">—</span></div>
+      </div>
+    </article>
+
+    <article class="channel" data-channel="vix">
+      <div class="channel__head">
+        <span class="channel__index">03</span>
+        <h2 data-i18n="ch3_title">Market volatility</h2>
+        <span class="channel__z" data-field="z_score">—</span>
+      </div>
+      <p class="channel__desc" data-i18n="ch3_desc">CBOE VIX close — the market's own 30-day forward volatility estimate, priced by option traders.</p>
+      <div class="channel__stats">
+        <div><span class="stat-label" data-i18n="latestClose">latest close</span><span class="stat-value" data-field="value">—</span></div>
+        <div><span class="stat-label" data-i18n="baseline30">30-day baseline</span><span class="stat-value" data-field="baseline_mean">—</span></div>
+      </div>
+    </article>
+
+    <article class="channel" data-channel="e4b_command_post">
+      <div class="channel__head">
+        <span class="channel__index">04</span>
+        <h2 data-i18n="ch4_title">Airborne command post</h2>
+        <span class="channel__z" data-field="z_score">—</span>
+      </div>
+      <p class="channel__desc" data-i18n="ch4_desc">How many of the 4 E-4B "Nightwatch" aircraft — the Air Force's airborne nuclear command posts — are airborne right now, via public ADS-B data.</p>
+      <div class="channel__stats">
+        <div><span class="stat-label" data-i18n="airborneNow">airborne now</span><span class="stat-value" data-field="value">—</span></div>
+        <div><span class="stat-label" data-i18n="typical">typical</span><span class="stat-value" data-field="baseline_mean">—</span></div>
+      </div>
+    </article>
+
+    <article class="channel channel--wide" data-channel="polymarket_odds">
+      <div class="channel__head">
+        <span class="channel__index">05</span>
+        <h2 data-i18n="ch5_title">Prediction-market odds</h2>
+        <span class="channel__z" data-field="z_score">—</span>
+      </div>
+      <p class="channel__desc" data-i18n="ch5_desc">Highest live probability, across a watchlist of nuclear-war / recession / pandemic / NATO-Russia-war questions on Polymarket — real money betting on the exact things this dashboard tracks.</p>
+      <p class="channel__question" data-field="matched_question"></p>
+      <div class="channel__stats">
+        <div><span class="stat-label" data-i18n="currentOdds">current odds</span><span class="stat-value" data-field="value">—</span></div>
+        <div><span class="stat-label" data-i18n="typical">typical</span><span class="stat-value" data-field="baseline_mean">—</span></div>
+      </div>
+    </article>
+
+    <article class="channel channel--wide" data-channel="yacht_fleet">
+      <div class="channel__head">
+        <span class="channel__index">06</span>
+        <h2 data-i18n="ch6_title">Billionaire fleet</h2>
+        <span class="channel__z" data-field="z_score">—</span>
+      </div>
+      <p class="channel__desc" data-i18n="ch6_desc">How many of 11 tracked billionaire/oligarch superyachts are currently clustered in known sanctions-indifferent or "bolt-hole" waters, via public AIS data — aggregate count only, no individual vessel singled out.</p>
+      <div class="channel__stats">
+        <div><span class="stat-label" data-i18n="inHavenNow">in safe-haven waters</span><span class="stat-value" data-field="value">—</span></div>
+        <div><span class="stat-label" data-i18n="typical">typical</span><span class="stat-value" data-field="baseline_mean">—</span></div>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="history-panel" aria-label="Recent history">
+    <h2 data-i18n="recentReadings">Recent readings</h2>
+    <svg viewBox="0 0 600 100" class="history-chart" id="history-chart" preserveAspectRatio="none"></svg>
+  </section>
+
+  <p class="methodology">
+    <span data-i18n="methodology">Each channel is scored as a z-score against its own trailing baseline, then averaged. This is a rough composite signal, not a forecast — markets, filings, and search trends all have mundane explanations most of the time. Companion project:</span> <a href="https://ews.kylemcdonald.net/" target="_blank" rel="noopener">Apocalypse Early Warning System</a> <span data-i18n="methodologyEnd">by Kyle McDonald, which tracks private-jet activity the same way.</span>
+  </p>
+
+</main>
+
+<footer class="station-footer">
+  <span data-i18n="footer">data refreshed on a schedule — see /data/dashboard.json</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
