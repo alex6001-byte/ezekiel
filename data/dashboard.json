@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-24T19:46:23.150940+00:00",
+  "generated_at": "2026-07-24T19:50:19.905119+00:00",
   "level": 1,
-  "avg_z_score": -0.05,
+  "avg_z_score": 0.38,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -10,25 +10,13 @@
       "baseline_mean": 1370.1,
       "z_score": -0.99
     },
-    "google_trends": {
-      "label": "Google Trends panic-keyword basket",
-      "keywords": [
-        "bunker",
-        "gold storage",
-        "potassium iodide",
-        "evacuation route"
-      ],
-      "date": "2026-07-24",
-      "value": 11.0,
-      "baseline_mean": 19.2,
-      "z_score": -1.77
-    },
+    "google_trends": null,
     "vix": {
       "label": "VIX (CBOE volatility index)",
       "date": "2026-07-24",
-      "value": 18.9,
+      "value": 18.88,
       "baseline_mean": 17.39,
-      "z_score": 1.01
+      "z_score": 0.99
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
@@ -414,6 +402,11 @@
       "timestamp": "2026-07-24T19:46:23.150940+00:00",
       "level": 1,
       "avg_z_score": -0.05
+    },
+    {
+      "timestamp": "2026-07-24T19:50:19.905119+00:00",
+      "level": 1,
+      "avg_z_score": 0.38
     }
   ]
 }
