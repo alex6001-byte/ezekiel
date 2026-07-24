@@ -10,7 +10,19 @@
       "baseline_mean": 1370.1,
       "z_score": -0.99
     },
-    "google_trends": null,
+    "google_trends": {
+      "label": "Google Trends panic-keyword basket",
+      "keywords": [
+        "bunker",
+        "gold storage",
+        "potassium iodide",
+        "evacuation route"
+      ],
+      "date": "2026-07-24",
+      "value": 12.5,
+      "baseline_mean": 20.4,
+      "z_score": -1.64
+    },
     "vix": {
       "label": "VIX (CBOE volatility index)",
       "date": "2026-07-24",
