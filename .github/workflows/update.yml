@@ -36,13 +36,12 @@ jobs:
           git diff --staged --quiet || git commit -m "data: refresh signals [skip ci]"
           git push
 
-      - name: Upload dashboard.json to the live site via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Upload dashboard.json to the live site via SFTP
+        uses: wangyucode/sftp-upload-action@v3
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          host: ${{ secrets.FTP_SERVER }}
+          port: 23
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps         # manitu only offers SFTP or explicit FTPS, not plain FTP
-          port: 21
-          local-dir: ./data/
-          server-dir: ${{ secrets.FTP_DATA_DIR }}   # e.g. /ezekiel/data/ — see README
+          localDir: 'data'
+          remoteDir: ${{ secrets.FTP_DATA_DIR }}   # e.g. /data/ — see README
