@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-25T14:03:32.645087+00:00",
+  "generated_at": "2026-07-25T19:36:48.159768+00:00",
   "level": 1,
-  "avg_z_score": 0.38,
+  "avg_z_score": -0.02,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -10,7 +10,19 @@
       "baseline_mean": 1330.1,
       "z_score": -0.81
     },
-    "google_trends": null,
+    "google_trends": {
+      "label": "Google Trends panic-keyword basket",
+      "keywords": [
+        "bunker",
+        "gold storage",
+        "potassium iodide",
+        "evacuation route"
+      ],
+      "date": "2026-07-25",
+      "value": 11.8,
+      "baseline_mean": 19.6,
+      "z_score": -1.66
+    },
     "vix": {
       "label": "VIX (CBOE volatility index)",
       "date": "2026-07-23",
@@ -28,7 +40,7 @@
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-07-25",
-      "value": "12.0%",
+      "value": "13.0%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 1.5,
       "matched_question": "US recession by end of 2026?",
@@ -36,11 +48,19 @@
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.12
+          "probability": 0.13
         }
       ]
     },
-    "yacht_fleet": null
+    "yacht_fleet": {
+      "label": "Tracked yacht fleet in safe-haven waters",
+      "date": "2026-07-25",
+      "value": "0 of 1 tracked",
+      "baseline_mean": "0-1 (typical)",
+      "z_score": 0.0,
+      "positions_received": 1,
+      "in_haven": []
+    }
   },
   "history": [
     {
@@ -432,6 +452,11 @@
       "timestamp": "2026-07-25T14:03:32.645087+00:00",
       "level": 1,
       "avg_z_score": 0.38
+    },
+    {
+      "timestamp": "2026-07-25T19:36:48.159768+00:00",
+      "level": 1,
+      "avg_z_score": -0.02
     }
   ]
 }
