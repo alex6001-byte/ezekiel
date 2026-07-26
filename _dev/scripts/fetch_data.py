@@ -8,7 +8,7 @@ the raw numbers behind it. Writes everything to data/dashboard.json.
 
 Sources:
   1. SEC EDGAR daily index  -> count of Form 4 (insider transaction) filings per day
-  2. Google Trends (pytrends) -> interest in a basket of "panic" search terms
+  2. Wikipedia pageviews API -> readership of a basket of "panic" articles
   3. Yahoo Finance (yfinance) -> VIX close price
 
 None of these require an API key. All of them can rate-limit or change
@@ -96,41 +96,63 @@ def fetch_sec_signal():
         log(f"SEC fetch failed: {e}")
         return None
 
-
 # ---------------------------------------------------------------------------
-# 2. Google Trends - basket of "panic" search terms
+# 2. Wikipedia pageviews - basket of "panic" article readership
 # ---------------------------------------------------------------------------
 
-PANIC_KEYWORDS = ["bunker", "gold storage", "potassium iodide", "evacuation route"]
+PANIC_WIKI_ARTICLES = ["Bunker", "Gold_as_an_investment", "Potassium_iodide", "Evacuation"]
+WIKI_PAGEVIEWS_BASE = "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article"
+WIKI_HEADERS = {"User-Agent": "ezekiel-signal-station/1.0 (personal project)"}
+
+
+def _wiki_pageviews(article, start, end):
+    url = f"{WIKI_PAGEVIEWS_BASE}/en.wikipedia.org/all-access/user/{article}/daily/{start}/{end}"
+    resp = requests.get(url, headers=WIKI_HEADERS, timeout=20)
+    resp.raise_for_status()
+    items = resp.json().get("items", [])
+    return {item["timestamp"][:8]: item["views"] for item in items}
 
 
 def fetch_trends_signal():
     try:
-        from pytrends.request import TrendReq
+        # Wikimedia pageviews data lags ~1-2 days behind real time, so end
+        # the window a couple of days back to make sure data actually exists.
+        end_day = date.today() - timedelta(days=2)
+        start_day = end_day - timedelta(days=30)
+        start_str = start_day.strftime("%Y%m%d")
+        end_str = end_day.strftime("%Y%m%d")
 
-        pytrends = TrendReq(hl="en-US", tz=0)
-        pytrends.build_payload(PANIC_KEYWORDS, timeframe="today 3-m")
-        df = pytrends.interest_over_time()
-        if df is None or df.empty:
-            log("Trends: empty response")
+        daily_totals = {}
+        for article in PANIC_WIKI_ARTICLES:
+            views = _wiki_pageviews(article, start_str, end_str)
+            for day, count in views.items():
+                daily_totals[day] = daily_totals.get(day, 0) + count
+
+        if not daily_totals:
+            log("Wiki panic: empty response")
             return None
-        df = df.drop(columns=[c for c in df.columns if c == "isPartial"], errors="ignore")
-        composite = df.mean(axis=1)  # average interest across the basket, per day
-        latest_value = float(composite.iloc[-1])
-        baseline_values = composite.iloc[:-1].tolist()
+
+        days_sorted = sorted(daily_totals.keys())
+        series = [daily_totals[d] for d in days_sorted]
+        latest_value = float(series[-1])
+        baseline_values = series[:-1]
+        if len(baseline_values) < 2:
+            log("Wiki panic: not enough history for baseline")
+            return None
         mean = statistics.mean(baseline_values)
         stdev = statistics.pstdev(baseline_values) or 1.0
         z = (latest_value - mean) / stdev
+        d = days_sorted[-1]
         return {
-            "label": "Google Trends panic-keyword basket",
-            "keywords": PANIC_KEYWORDS,
-            "date": str(composite.index[-1].date()),
+            "label": "Wikipedia pageviews panic-article basket",
+            "keywords": PANIC_WIKI_ARTICLES,
+            "date": f"{d[:4]}-{d[4:6]}-{d[6:8]}",
             "value": round(latest_value, 1),
             "baseline_mean": round(mean, 1),
             "z_score": round(z, 2),
         }
     except Exception as e:
-        log(f"Trends fetch failed: {e}")
+        log(f"Wiki panic fetch failed: {e}")
         return None
 
 
