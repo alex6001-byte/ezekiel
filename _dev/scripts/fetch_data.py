@@ -377,7 +377,7 @@ SAFE_HAVEN_REGIONS = [
 ]
 
 AISSTREAM_WS_URL = "wss://stream.aisstream.io/v0/stream"
-AISSTREAM_LISTEN_SECONDS = 180  # how long to keep the socket open per run
+AISSTREAM_LISTEN_SECONDS = 480  # how long to keep the socket open per run
 
 
 def _in_safe_haven(lat, lon):
