@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-30T20:41:50.284013+00:00",
+  "generated_at": "2026-07-30T22:26:06.292242+00:00",
   "level": 1,
-  "avg_z_score": 0.25,
+  "avg_z_score": 0.32,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -10,7 +10,19 @@
       "baseline_mean": 1173.2,
       "z_score": -0.57
     },
-    "google_trends": null,
+    "google_trends": {
+      "label": "Wikipedia pageviews panic-article basket",
+      "keywords": [
+        "Bunker",
+        "Gold_as_an_investment",
+        "Potassium_iodide",
+        "Evacuation"
+      ],
+      "date": "2026-07-28",
+      "value": 659.0,
+      "baseline_mean": 615.5,
+      "z_score": 0.91
+    },
     "vix": {
       "label": "VIX (CBOE volatility index)",
       "date": "2026-07-30",
@@ -21,14 +33,14 @@
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
       "date": "2026-07-30",
-      "value": 1,
+      "value": 0,
       "baseline_mean": "0-1 (typical)",
-      "z_score": 0.3
+      "z_score": 0.0
     },
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-07-30",
-      "value": "11.5%",
+      "value": "12.0%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 1.5,
       "matched_question": "US recession by end of 2026?",
@@ -36,7 +48,7 @@
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.115
+          "probability": 0.12
         }
       ]
     },
@@ -697,6 +709,11 @@
       "timestamp": "2026-07-30T20:41:50.284013+00:00",
       "level": 1,
       "avg_z_score": 0.25
+    },
+    {
+      "timestamp": "2026-07-30T22:26:06.292242+00:00",
+      "level": 1,
+      "avg_z_score": 0.32
     }
   ]
 }
