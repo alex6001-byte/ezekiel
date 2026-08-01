@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-01T15:24:50.921010+00:00",
+  "generated_at": "2026-08-01T16:22:17.703675+00:00",
   "level": 1,
-  "avg_z_score": 0.07,
+  "avg_z_score": 0.01,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -33,9 +33,9 @@
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
       "date": "2026-08-01",
-      "value": 1,
+      "value": 0,
       "baseline_mean": "0-1 (typical)",
-      "z_score": 0.3
+      "z_score": 0.0
     },
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
@@ -804,6 +804,11 @@
       "timestamp": "2026-08-01T15:24:50.921010+00:00",
       "level": 1,
       "avg_z_score": 0.07
+    },
+    {
+      "timestamp": "2026-08-01T16:22:17.703675+00:00",
+      "level": 1,
+      "avg_z_score": 0.01
     }
   ]
 }
