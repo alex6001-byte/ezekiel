@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-01T00:20:02.714186+00:00",
+  "generated_at": "2026-08-01T03:55:56.173309+00:00",
   "level": 1,
-  "avg_z_score": 0.01,
+  "avg_z_score": 0.0,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
-      "date": "2026-07-30",
-      "value": 745,
-      "baseline_mean": 1102.3,
-      "z_score": -0.45
+      "date": "2026-07-31",
+      "value": 712,
+      "baseline_mean": 1089.5,
+      "z_score": -0.48
     },
     "google_trends": {
       "label": "Wikipedia pageviews panic-article basket",
@@ -782,6 +782,11 @@
       "timestamp": "2026-08-01T00:20:02.714186+00:00",
       "level": 1,
       "avg_z_score": 0.01
+    },
+    {
+      "timestamp": "2026-08-01T03:55:56.173309+00:00",
+      "level": 1,
+      "avg_z_score": 0.0
     }
   ]
 }
