@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-15T16:47:58.016076+00:00",
+  "generated_at": "2026-08-15T17:42:08.829562+00:00",
   "level": 1,
-  "avg_z_score": -0.21,
+  "avg_z_score": 0.28,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -10,7 +10,19 @@
       "baseline_mean": 963.3,
       "z_score": 0.27
     },
-    "google_trends": null,
+    "google_trends": {
+      "label": "Wikipedia pageviews panic-article basket",
+      "keywords": [
+        "Bunker",
+        "Gold_as_an_investment",
+        "Potassium_iodide",
+        "Evacuation"
+      ],
+      "date": "2026-08-13",
+      "value": 744.0,
+      "baseline_mean": 624.6,
+      "z_score": 2.27
+    },
     "vix": {
       "label": "VIX (CBOE volatility index)",
       "date": "2026-08-14",
@@ -43,11 +55,6 @@
     "yacht_fleet": null
   },
   "history": [
-    {
-      "timestamp": "2026-08-04T20:50:38.428300+00:00",
-      "level": 1,
-      "avg_z_score": 0.26
-    },
     {
       "timestamp": "2026-08-04T22:29:52.994147+00:00",
       "level": 1,
@@ -942,6 +949,11 @@
       "timestamp": "2026-08-15T16:47:58.016076+00:00",
       "level": 1,
       "avg_z_score": -0.21
+    },
+    {
+      "timestamp": "2026-08-15T17:42:08.829562+00:00",
+      "level": 1,
+      "avg_z_score": 0.28
     }
   ]
 }
