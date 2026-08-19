@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T09:55:58.824523+00:00",
+  "generated_at": "2026-08-19T10:53:16.808327+00:00",
   "level": 1,
   "avg_z_score": 0.73,
   "signals": {
@@ -26,7 +26,7 @@
     "vix": {
       "label": "VIX (CBOE volatility index)",
       "date": "2026-08-19",
-      "value": 15.86,
+      "value": 15.87,
       "baseline_mean": 16.54,
       "z_score": -0.44
     },
@@ -55,11 +55,6 @@
     "yacht_fleet": null
   },
   "history": [
-    {
-      "timestamp": "2026-08-10T13:50:08.763956+00:00",
-      "level": 1,
-      "avg_z_score": -0.72
-    },
     {
       "timestamp": "2026-08-10T15:24:12.737599+00:00",
       "level": 1,
@@ -952,6 +947,11 @@
     },
     {
       "timestamp": "2026-08-19T09:55:58.824523+00:00",
+      "level": 1,
+      "avg_z_score": 0.73
+    },
+    {
+      "timestamp": "2026-08-19T10:53:16.808327+00:00",
       "level": 1,
       "avg_z_score": 0.73
     }
