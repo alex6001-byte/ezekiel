@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-20T23:38:49.893389+00:00",
+  "generated_at": "2026-08-21T02:04:12.552331+00:00",
   "level": 1,
-  "avg_z_score": 0.19,
+  "avg_z_score": 0.36,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
       "date": "2026-08-19",
       "value": 1390,
-      "baseline_mean": 968,
-      "z_score": 1.07
+      "baseline_mean": 974.6,
+      "z_score": 1.04
     },
     "google_trends": {
       "label": "Wikipedia pageviews panic-article basket",
@@ -18,28 +18,28 @@
         "Potassium_iodide",
         "Evacuation"
       ],
-      "date": "2026-08-18",
-      "value": 614.0,
-      "baseline_mean": 633.2,
-      "z_score": -0.36
+      "date": "2026-08-19",
+      "value": 663.0,
+      "baseline_mean": 634.8,
+      "z_score": 0.54
     },
     "vix": {
       "label": "VIX (CBOE volatility index)",
       "date": "2026-08-20",
       "value": 16.01,
-      "baseline_mean": 16.44,
-      "z_score": -0.27
+      "baseline_mean": 16.47,
+      "z_score": -0.3
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
-      "date": "2026-08-20",
+      "date": "2026-08-21",
       "value": 0,
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0
     },
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
-      "date": "2026-08-20",
+      "date": "2026-08-21",
       "value": "7.5%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 0.5,
@@ -55,11 +55,6 @@
     "yacht_fleet": null
   },
   "history": [
-    {
-      "timestamp": "2026-08-12T16:17:02.656472+00:00",
-      "level": 2,
-      "avg_z_score": 0.93
-    },
     {
       "timestamp": "2026-08-12T17:18:48.085177+00:00",
       "level": 2,
@@ -954,6 +949,11 @@
       "timestamp": "2026-08-20T23:38:49.893389+00:00",
       "level": 1,
       "avg_z_score": 0.19
+    },
+    {
+      "timestamp": "2026-08-21T02:04:12.552331+00:00",
+      "level": 1,
+      "avg_z_score": 0.36
     }
   ]
 }
