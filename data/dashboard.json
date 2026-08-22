@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-22T01:57:01.007920+00:00",
+  "generated_at": "2026-08-22T03:14:31.619870+00:00",
   "level": 1,
-  "avg_z_score": 0.01,
+  "avg_z_score": 0.13,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
-      "date": "2026-08-20",
-      "value": 975,
-      "baseline_mean": 1001.1,
-      "z_score": -0.07
+      "date": "2026-08-21",
+      "value": 1196,
+      "baseline_mean": 1000.2,
+      "z_score": 0.5
     },
     "google_trends": {
       "label": "Wikipedia pageviews panic-article basket",
@@ -55,11 +55,6 @@
     "yacht_fleet": null
   },
   "history": [
-    {
-      "timestamp": "2026-08-14T02:52:09.479597+00:00",
-      "level": 1,
-      "avg_z_score": -0.26
-    },
     {
       "timestamp": "2026-08-14T05:07:58.306606+00:00",
       "level": 1,
@@ -954,6 +949,11 @@
       "timestamp": "2026-08-22T01:57:01.007920+00:00",
       "level": 1,
       "avg_z_score": 0.01
+    },
+    {
+      "timestamp": "2026-08-22T03:14:31.619870+00:00",
+      "level": 1,
+      "avg_z_score": 0.13
     }
   ]
 }
