@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T09:11:08.857905+00:00",
+  "generated_at": "2026-08-24T10:10:31.648004+00:00",
   "level": 1,
   "avg_z_score": -0.17,
   "signals": {
@@ -26,9 +26,9 @@
     "vix": {
       "label": "VIX (CBOE volatility index)",
       "date": "2026-08-24",
-      "value": 15.88,
+      "value": 15.89,
       "baseline_mean": 16.48,
-      "z_score": -0.39
+      "z_score": -0.38
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
@@ -63,11 +63,6 @@
     }
   },
   "history": [
-    {
-      "timestamp": "2026-08-16T13:00:16.445878+00:00",
-      "level": 1,
-      "avg_z_score": 0.27
-    },
     {
       "timestamp": "2026-08-16T13:51:52.212961+00:00",
       "level": 1,
@@ -960,6 +955,11 @@
     },
     {
       "timestamp": "2026-08-24T09:11:08.857905+00:00",
+      "level": 1,
+      "avg_z_score": -0.17
+    },
+    {
+      "timestamp": "2026-08-24T10:10:31.648004+00:00",
       "level": 1,
       "avg_z_score": -0.17
     }
