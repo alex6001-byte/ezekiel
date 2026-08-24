@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T03:23:36.908969+00:00",
+  "generated_at": "2026-08-24T04:13:45.650830+00:00",
   "level": 1,
   "avg_z_score": -0.25,
   "signals": {
@@ -55,19 +55,14 @@
     "yacht_fleet": {
       "label": "Tracked yacht fleet in safe-haven waters",
       "date": "2026-08-24",
-      "value": "0 of 1 tracked",
+      "value": "0 of 2 tracked",
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0,
-      "positions_received": 1,
+      "positions_received": 2,
       "in_haven": []
     }
   },
   "history": [
-    {
-      "timestamp": "2026-08-16T07:52:00.224646+00:00",
-      "level": 1,
-      "avg_z_score": -0.21
-    },
     {
       "timestamp": "2026-08-16T08:53:27.553919+00:00",
       "level": 1,
@@ -960,6 +955,11 @@
     },
     {
       "timestamp": "2026-08-24T03:23:36.908969+00:00",
+      "level": 1,
+      "avg_z_score": -0.25
+    },
+    {
+      "timestamp": "2026-08-24T04:13:45.650830+00:00",
       "level": 1,
       "avg_z_score": -0.25
     }
