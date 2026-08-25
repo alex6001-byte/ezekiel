@@ -1,15 +1,9 @@
 {
-  "generated_at": "2026-08-25T17:52:42.060041+00:00",
+  "generated_at": "2026-08-25T19:04:20.044094+00:00",
   "level": 1,
-  "avg_z_score": -0.08,
+  "avg_z_score": -0.09,
   "signals": {
-    "sec_insider_filings": {
-      "label": "SEC Form 4 filings (insider transactions)",
-      "date": "2026-08-24",
-      "value": 1360,
-      "baseline_mean": 1016.9,
-      "z_score": 0.88
-    },
+    "sec_insider_filings": null,
     "google_trends": {
       "label": "Wikipedia pageviews panic-article basket",
       "keywords": [
@@ -26,9 +20,9 @@
     "vix": {
       "label": "VIX (CBOE volatility index)",
       "date": "2026-08-25",
-      "value": 15.57,
+      "value": 15.48,
       "baseline_mean": 16.44,
-      "z_score": -0.56
+      "z_score": -0.62
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
@@ -40,34 +34,29 @@
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-08-25",
-      "value": "7.5%",
+      "value": "8.5%",
       "baseline_mean": "low single digits (typical)",
-      "z_score": 0.5,
+      "z_score": 1.5,
       "matched_question": "US recession by end of 2026?",
       "all_matches": [
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.075
+          "probability": 0.085
         }
       ]
     },
     "yacht_fleet": {
       "label": "Tracked yacht fleet in safe-haven waters",
       "date": "2026-08-25",
-      "value": "0 of 1 tracked",
+      "value": "0 of 2 tracked",
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0,
-      "positions_received": 1,
+      "positions_received": 2,
       "in_haven": []
     }
   },
   "history": [
-    {
-      "timestamp": "2026-08-17T21:46:59.887038+00:00",
-      "level": 1,
-      "avg_z_score": -0.28
-    },
     {
       "timestamp": "2026-08-17T22:47:34.904516+00:00",
       "level": 1,
@@ -962,6 +951,11 @@
       "timestamp": "2026-08-25T17:52:42.060041+00:00",
       "level": 1,
       "avg_z_score": -0.08
+    },
+    {
+      "timestamp": "2026-08-25T19:04:20.044094+00:00",
+      "level": 1,
+      "avg_z_score": -0.09
     }
   ]
 }
