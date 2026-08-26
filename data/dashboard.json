@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-26T02:05:16.885013+00:00",
+  "generated_at": "2026-08-26T03:25:09.746167+00:00",
   "level": 1,
-  "avg_z_score": 0.48,
+  "avg_z_score": 0.34,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
-      "date": "2026-08-24",
-      "value": 1360,
-      "baseline_mean": 1030.8,
-      "z_score": 0.85
+      "date": "2026-08-25",
+      "value": 1047,
+      "baseline_mean": 1041.8,
+      "z_score": 0.01
     },
     "google_trends": {
       "label": "Wikipedia pageviews panic-article basket",
@@ -55,19 +55,14 @@
     "yacht_fleet": {
       "label": "Tracked yacht fleet in safe-haven waters",
       "date": "2026-08-26",
-      "value": "0 of 1 tracked",
+      "value": "0 of 2 tracked",
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0,
-      "positions_received": 1,
+      "positions_received": 2,
       "in_haven": []
     }
   },
   "history": [
-    {
-      "timestamp": "2026-08-18T05:52:23.316878+00:00",
-      "level": 1,
-      "avg_z_score": 0.05
-    },
     {
       "timestamp": "2026-08-18T07:10:29.137241+00:00",
       "level": 1,
@@ -962,6 +957,11 @@
       "timestamp": "2026-08-26T02:05:16.885013+00:00",
       "level": 1,
       "avg_z_score": 0.48
+    },
+    {
+      "timestamp": "2026-08-26T03:25:09.746167+00:00",
+      "level": 1,
+      "avg_z_score": 0.34
     }
   ]
 }
