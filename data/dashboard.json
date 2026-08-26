@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-26T09:08:44.633187+00:00",
+  "generated_at": "2026-08-26T10:04:04.431654+00:00",
   "level": 1,
-  "avg_z_score": 0.44,
+  "avg_z_score": 0.37,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -52,14 +52,17 @@
         }
       ]
     },
-    "yacht_fleet": null
+    "yacht_fleet": {
+      "label": "Tracked yacht fleet in safe-haven waters",
+      "date": "2026-08-26",
+      "value": "0 of 2 tracked",
+      "baseline_mean": "0-1 (typical)",
+      "z_score": 0.0,
+      "positions_received": 2,
+      "in_haven": []
+    }
   },
   "history": [
-    {
-      "timestamp": "2026-08-18T13:15:04.146279+00:00",
-      "level": 1,
-      "avg_z_score": 0.14
-    },
     {
       "timestamp": "2026-08-18T14:04:14.354526+00:00",
       "level": 1,
@@ -954,6 +957,11 @@
       "timestamp": "2026-08-26T09:08:44.633187+00:00",
       "level": 1,
       "avg_z_score": 0.44
+    },
+    {
+      "timestamp": "2026-08-26T10:04:04.431654+00:00",
+      "level": 1,
+      "avg_z_score": 0.37
     }
   ]
 }
