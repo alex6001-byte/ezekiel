@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-31T05:37:16.275718+00:00",
+  "generated_at": "2026-08-31T13:51:24.187070+00:00",
   "level": 1,
-  "avg_z_score": 0.45,
+  "avg_z_score": 0.6,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -25,17 +25,17 @@
     },
     "vix": {
       "label": "VIX (CBOE volatility index)",
-      "date": "2026-08-28",
-      "value": 14.43,
-      "baseline_mean": 16.32,
-      "z_score": -1.17
+      "date": "2026-08-31",
+      "value": 15.28,
+      "baseline_mean": 16.17,
+      "z_score": -0.56
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
       "date": "2026-08-31",
-      "value": 0,
+      "value": 1,
       "baseline_mean": "0-1 (typical)",
-      "z_score": 0.0
+      "z_score": 0.3
     },
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
@@ -55,19 +55,14 @@
     "yacht_fleet": {
       "label": "Tracked yacht fleet in safe-haven waters",
       "date": "2026-08-31",
-      "value": "0 of 2 tracked",
+      "value": "0 of 1 tracked",
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0,
-      "positions_received": 2,
+      "positions_received": 1,
       "in_haven": []
     }
   },
   "history": [
-    {
-      "timestamp": "2026-08-19T16:53:35.821187+00:00",
-      "level": 2,
-      "avg_z_score": 0.85
-    },
     {
       "timestamp": "2026-08-19T17:46:21.950922+00:00",
       "level": 2,
@@ -962,6 +957,11 @@
       "timestamp": "2026-08-31T05:37:16.275718+00:00",
       "level": 1,
       "avg_z_score": 0.45
+    },
+    {
+      "timestamp": "2026-08-31T13:51:24.187070+00:00",
+      "level": 1,
+      "avg_z_score": 0.6
     }
   ]
 }
