@@ -1,9 +1,15 @@
 {
-  "generated_at": "2026-09-03T21:52:45.625891+00:00",
+  "generated_at": "2026-09-04T00:12:11.861666+00:00",
   "level": 1,
-  "avg_z_score": 0.1,
+  "avg_z_score": 0.44,
   "signals": {
-    "sec_insider_filings": null,
+    "sec_insider_filings": {
+      "label": "SEC Form 4 filings (insider transactions)",
+      "date": "2026-09-02",
+      "value": 1686,
+      "baseline_mean": 1081.5,
+      "z_score": 1.72
+    },
     "google_trends": {
       "label": "Wikipedia pageviews panic-article basket",
       "keywords": [
@@ -12,10 +18,10 @@
         "Potassium_iodide",
         "Evacuation"
       ],
-      "date": "2026-09-01",
-      "value": 728.0,
-      "baseline_mean": 652.1,
-      "z_score": 1.08
+      "date": "2026-09-02",
+      "value": 762.0,
+      "baseline_mean": 655.9,
+      "z_score": 1.49
     },
     "vix": {
       "label": "VIX (CBOE volatility index)",
@@ -26,15 +32,15 @@
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
-      "date": "2026-09-03",
+      "date": "2026-09-04",
       "value": 0,
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0
     },
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
-      "date": "2026-09-03",
-      "value": "7.5%",
+      "date": "2026-09-04",
+      "value": "7.0%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 0.5,
       "matched_question": "US recession by end of 2026?",
@@ -42,26 +48,21 @@
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.075
+          "probability": 0.07
         }
       ]
     },
     "yacht_fleet": {
       "label": "Tracked yacht fleet in safe-haven waters",
-      "date": "2026-09-03",
-      "value": "0 of 1 tracked",
+      "date": "2026-09-04",
+      "value": "0 of 2 tracked",
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0,
-      "positions_received": 1,
+      "positions_received": 2,
       "in_haven": []
     }
   },
   "history": [
-    {
-      "timestamp": "2026-08-20T13:59:07.282075+00:00",
-      "level": 1,
-      "avg_z_score": 0.32
-    },
     {
       "timestamp": "2026-08-20T14:54:46.650238+00:00",
       "level": 1,
@@ -956,6 +957,11 @@
       "timestamp": "2026-09-03T21:52:45.625891+00:00",
       "level": 1,
       "avg_z_score": 0.1
+    },
+    {
+      "timestamp": "2026-09-04T00:12:11.861666+00:00",
+      "level": 1,
+      "avg_z_score": 0.44
     }
   ]
 }
