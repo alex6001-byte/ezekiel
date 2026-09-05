@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-05T00:10:35.484437+00:00",
+  "generated_at": "2026-09-05T04:30:38.918691+00:00",
   "level": 1,
-  "avg_z_score": 0.74,
+  "avg_z_score": 0.06,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
-      "date": "2026-09-03",
-      "value": 1971,
-      "baseline_mean": 1120.8,
-      "z_score": 2.41
+      "date": "2026-09-04",
+      "value": 894,
+      "baseline_mean": 1149.1,
+      "z_score": -0.67
     },
     "google_trends": {
       "label": "Wikipedia pageviews panic-article basket",
@@ -55,28 +55,14 @@
     "yacht_fleet": {
       "label": "Tracked yacht fleet in safe-haven waters",
       "date": "2026-09-05",
-      "value": "2 of 4 tracked",
+      "value": "0 of 2 tracked",
       "baseline_mean": "0-1 (typical)",
-      "z_score": 1.0,
-      "positions_received": 4,
-      "in_haven": [
-        {
-          "name": "Eclipse",
-          "region": "Turkish Aegean coast"
-        },
-        {
-          "name": "Solaris",
-          "region": "Turkish Aegean coast"
-        }
-      ]
+      "z_score": 0.0,
+      "positions_received": 2,
+      "in_haven": []
     }
   },
   "history": [
-    {
-      "timestamp": "2026-08-20T20:53:04.993019+00:00",
-      "level": 1,
-      "avg_z_score": 0.19
-    },
     {
       "timestamp": "2026-08-20T21:43:20.018454+00:00",
       "level": 1,
@@ -971,6 +957,11 @@
       "timestamp": "2026-09-05T00:10:35.484437+00:00",
       "level": 1,
       "avg_z_score": 0.74
+    },
+    {
+      "timestamp": "2026-09-05T04:30:38.918691+00:00",
+      "level": 1,
+      "avg_z_score": 0.06
     }
   ]
 }
