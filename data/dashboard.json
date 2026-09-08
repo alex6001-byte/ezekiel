@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T01:19:00.959689+00:00",
+  "generated_at": "2026-09-08T06:04:39.363121+00:00",
   "level": 1,
   "avg_z_score": -0.17,
   "signals": {
@@ -40,7 +40,7 @@
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-09-08",
-      "value": "6.5%",
+      "value": "7.0%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 0.5,
       "matched_question": "US recession by end of 2026?",
@@ -48,7 +48,7 @@
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.065
+          "probability": 0.07
         }
       ]
     },
@@ -63,11 +63,6 @@
     }
   },
   "history": [
-    {
-      "timestamp": "2026-08-21T19:03:05.806204+00:00",
-      "level": 1,
-      "avg_z_score": 0.11
-    },
     {
       "timestamp": "2026-08-21T19:44:24.079412+00:00",
       "level": 1,
@@ -960,6 +955,11 @@
     },
     {
       "timestamp": "2026-09-08T01:19:00.959689+00:00",
+      "level": 1,
+      "avg_z_score": -0.17
+    },
+    {
+      "timestamp": "2026-09-08T06:04:39.363121+00:00",
       "level": 1,
       "avg_z_score": -0.17
     }
