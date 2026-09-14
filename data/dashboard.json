@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T01:10:05.133595+00:00",
+  "generated_at": "2026-09-14T06:22:58.111272+00:00",
   "level": 1,
   "avg_z_score": 0.39,
   "signals": {
@@ -40,7 +40,7 @@
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-09-14",
-      "value": "9.5%",
+      "value": "8.5%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 1.5,
       "matched_question": "US recession by end of 2026?",
@@ -48,26 +48,21 @@
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.095
+          "probability": 0.085
         }
       ]
     },
     "yacht_fleet": {
       "label": "Tracked yacht fleet in safe-haven waters",
       "date": "2026-09-14",
-      "value": "0 of 2 tracked",
+      "value": "0 of 1 tracked",
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0,
-      "positions_received": 2,
+      "positions_received": 1,
       "in_haven": []
     }
   },
   "history": [
-    {
-      "timestamp": "2026-08-23T10:46:02.962006+00:00",
-      "level": 1,
-      "avg_z_score": 0.25
-    },
     {
       "timestamp": "2026-08-23T11:41:56.159477+00:00",
       "level": 1,
@@ -960,6 +955,11 @@
     },
     {
       "timestamp": "2026-09-14T01:10:05.133595+00:00",
+      "level": 1,
+      "avg_z_score": 0.39
+    },
+    {
+      "timestamp": "2026-09-14T06:22:58.111272+00:00",
       "level": 1,
       "avg_z_score": 0.39
     }
