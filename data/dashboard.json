@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-14T22:36:52.167081+00:00",
-  "level": 1,
-  "avg_z_score": 0.66,
+  "generated_at": "2026-09-15T01:34:36.204186+00:00",
+  "level": 2,
+  "avg_z_score": 0.78,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
       "date": "2026-09-11",
       "value": 895,
-      "baseline_mean": 1206.7,
-      "z_score": -0.92
+      "baseline_mean": 1224.3,
+      "z_score": -1.0
     },
     "google_trends": {
       "label": "Wikipedia pageviews panic-article basket",
@@ -18,9 +18,9 @@
         "Potassium_iodide",
         "Evacuation"
       ],
-      "date": "2026-09-12",
-      "value": 838.0,
-      "baseline_mean": 704.5,
+      "date": "2026-09-13",
+      "value": 844.0,
+      "baseline_mean": 707.7,
       "z_score": 1.16
     },
     "vix": {
@@ -32,14 +32,14 @@
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
-      "date": "2026-09-14",
+      "date": "2026-09-15",
       "value": 0,
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0
     },
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
-      "date": "2026-09-14",
+      "date": "2026-09-15",
       "value": "9.5%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 1.5,
@@ -52,22 +52,9 @@
         }
       ]
     },
-    "yacht_fleet": {
-      "label": "Tracked yacht fleet in safe-haven waters",
-      "date": "2026-09-14",
-      "value": "0 of 1 tracked",
-      "baseline_mean": "0-1 (typical)",
-      "z_score": 0.0,
-      "positions_received": 1,
-      "in_haven": []
-    }
+    "yacht_fleet": null
   },
   "history": [
-    {
-      "timestamp": "2026-08-23T14:45:02.694881+00:00",
-      "level": 1,
-      "avg_z_score": 0.25
-    },
     {
       "timestamp": "2026-08-23T15:43:25.580873+00:00",
       "level": 1,
@@ -962,6 +949,11 @@
       "timestamp": "2026-09-14T22:36:52.167081+00:00",
       "level": 1,
       "avg_z_score": 0.66
+    },
+    {
+      "timestamp": "2026-09-15T01:34:36.204186+00:00",
+      "level": 2,
+      "avg_z_score": 0.78
     }
   ]
 }
