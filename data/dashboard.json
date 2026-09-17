@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-17T00:37:27.348684+00:00",
+  "generated_at": "2026-09-17T06:15:34.067518+00:00",
   "level": 2,
-  "avg_z_score": 0.75,
+  "avg_z_score": 0.86,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
-      "date": "2026-09-15",
-      "value": 1074,
-      "baseline_mean": 1193.2,
-      "z_score": -0.39
+      "date": "2026-09-16",
+      "value": 1277,
+      "baseline_mean": 1189.1,
+      "z_score": 0.29
     },
     "google_trends": {
       "label": "Wikipedia pageviews panic-article basket",
@@ -40,7 +40,7 @@
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-09-17",
-      "value": "11.5%",
+      "value": "10.5%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 1.5,
       "matched_question": "US recession by end of 2026?",
@@ -48,7 +48,7 @@
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.115
+          "probability": 0.105
         }
       ]
     },
@@ -63,11 +63,6 @@
     }
   },
   "history": [
-    {
-      "timestamp": "2026-08-24T04:13:45.650830+00:00",
-      "level": 1,
-      "avg_z_score": -0.25
-    },
     {
       "timestamp": "2026-08-24T05:07:43.839691+00:00",
       "level": 1,
@@ -962,6 +957,11 @@
       "timestamp": "2026-09-17T00:37:27.348684+00:00",
       "level": 2,
       "avg_z_score": 0.75
+    },
+    {
+      "timestamp": "2026-09-17T06:15:34.067518+00:00",
+      "level": 2,
+      "avg_z_score": 0.86
     }
   ]
 }
