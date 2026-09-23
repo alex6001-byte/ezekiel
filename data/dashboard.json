@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-23T00:37:49.084320+00:00",
+  "generated_at": "2026-09-23T06:04:33.333752+00:00",
   "level": 1,
-  "avg_z_score": -0.1,
+  "avg_z_score": 0.06,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
-      "date": "2026-09-21",
-      "value": 805,
-      "baseline_mean": 1186,
-      "z_score": -1.22
+      "date": "2026-09-22",
+      "value": 847,
+      "baseline_mean": 1172.9,
+      "z_score": -1.03
     },
     "google_trends": {
       "label": "Wikipedia pageviews panic-article basket",
@@ -25,10 +25,10 @@
     },
     "vix": {
       "label": "VIX (CBOE volatility index)",
-      "date": "2026-09-22",
-      "value": 14.21,
-      "baseline_mean": 15.49,
-      "z_score": -1.33
+      "date": "2026-09-21",
+      "value": 14.87,
+      "baseline_mean": 15.51,
+      "z_score": -0.67
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
@@ -52,22 +52,9 @@
         }
       ]
     },
-    "yacht_fleet": {
-      "label": "Tracked yacht fleet in safe-haven waters",
-      "date": "2026-09-23",
-      "value": "0 of 1 tracked",
-      "baseline_mean": "0-1 (typical)",
-      "z_score": 0.0,
-      "positions_received": 1,
-      "in_haven": []
-    }
+    "yacht_fleet": null
   },
   "history": [
-    {
-      "timestamp": "2026-08-25T17:01:56.393353+00:00",
-      "level": 1,
-      "avg_z_score": -0.05
-    },
     {
       "timestamp": "2026-08-25T17:52:42.060041+00:00",
       "level": 1,
@@ -962,6 +949,11 @@
       "timestamp": "2026-09-23T00:37:49.084320+00:00",
       "level": 1,
       "avg_z_score": -0.1
+    },
+    {
+      "timestamp": "2026-09-23T06:04:33.333752+00:00",
+      "level": 1,
+      "avg_z_score": 0.06
     }
   ]
 }
