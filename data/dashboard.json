@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-02T01:48:28.192389+00:00",
+  "generated_at": "2026-10-02T08:36:18.183356+00:00",
   "level": 1,
-  "avg_z_score": -0.01,
+  "avg_z_score": 0.39,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
-      "date": "2026-09-30",
-      "value": 669,
-      "baseline_mean": 1028.8,
-      "z_score": -1.18
+      "date": "2026-10-01",
+      "value": 1520,
+      "baseline_mean": 1016.4,
+      "z_score": 1.64
     },
     "google_trends": {
       "label": "Wikipedia pageviews panic-article basket",
@@ -25,10 +25,10 @@
     },
     "vix": {
       "label": "VIX (CBOE volatility index)",
-      "date": "2026-10-01",
-      "value": 16.39,
-      "baseline_mean": 15.62,
-      "z_score": 0.81
+      "date": "2026-10-02",
+      "value": 15.98,
+      "baseline_mean": 15.63,
+      "z_score": 0.36
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
@@ -55,19 +55,19 @@
     "yacht_fleet": {
       "label": "Tracked yacht fleet in safe-haven waters",
       "date": "2026-10-02",
-      "value": "0 of 1 tracked",
+      "value": "1 of 2 tracked",
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0,
-      "positions_received": 1,
-      "in_haven": []
+      "positions_received": 2,
+      "in_haven": [
+        {
+          "name": "Koru",
+          "region": "New Zealand / Fiji"
+        }
+      ]
     }
   },
   "history": [
-    {
-      "timestamp": "2026-08-31T20:11:22.665468+00:00",
-      "level": 2,
-      "avg_z_score": 0.92
-    },
     {
       "timestamp": "2026-08-31T23:58:15.648252+00:00",
       "level": 1,
@@ -962,6 +962,11 @@
       "timestamp": "2026-10-02T01:48:28.192389+00:00",
       "level": 1,
       "avg_z_score": -0.01
+    },
+    {
+      "timestamp": "2026-10-02T08:36:18.183356+00:00",
+      "level": 1,
+      "avg_z_score": 0.39
     }
   ]
 }
