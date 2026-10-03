@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T06:37:27.278630+00:00",
+  "generated_at": "2026-10-03T12:38:20.090015+00:00",
   "level": 2,
   "avg_z_score": 0.84,
   "signals": {
@@ -55,10 +55,10 @@
     "yacht_fleet": {
       "label": "Tracked yacht fleet in safe-haven waters",
       "date": "2026-10-03",
-      "value": "1 of 2 tracked",
+      "value": "1 of 1 tracked",
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0,
-      "positions_received": 2,
+      "positions_received": 1,
       "in_haven": [
         {
           "name": "Koru",
@@ -68,11 +68,6 @@
     }
   },
   "history": [
-    {
-      "timestamp": "2026-09-01T18:37:20.893231+00:00",
-      "level": 1,
-      "avg_z_score": -0.16
-    },
     {
       "timestamp": "2026-09-01T21:53:42.134294+00:00",
       "level": 1,
@@ -965,6 +960,11 @@
     },
     {
       "timestamp": "2026-10-03T06:37:27.278630+00:00",
+      "level": 2,
+      "avg_z_score": 0.84
+    },
+    {
+      "timestamp": "2026-10-03T12:38:20.090015+00:00",
       "level": 2,
       "avg_z_score": 0.84
     }
