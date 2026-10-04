@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-03T23:08:47.765813+00:00",
-  "level": 2,
-  "avg_z_score": 0.84,
+  "generated_at": "2026-10-04T02:43:18.982685+00:00",
+  "level": 1,
+  "avg_z_score": 0.73,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -18,10 +18,10 @@
         "Potassium_iodide",
         "Evacuation"
       ],
-      "date": "2026-10-01",
-      "value": 620.0,
-      "baseline_mean": 768.1,
-      "z_score": -1.51
+      "date": "2026-10-02",
+      "value": 548.0,
+      "baseline_mean": 764.5,
+      "z_score": -2.13
     },
     "vix": {
       "label": "VIX (CBOE volatility index)",
@@ -32,14 +32,14 @@
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
-      "date": "2026-10-03",
+      "date": "2026-10-04",
       "value": 0,
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0
     },
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
-      "date": "2026-10-03",
+      "date": "2026-10-04",
       "value": "7.5%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 0.5,
@@ -54,7 +54,7 @@
     },
     "yacht_fleet": {
       "label": "Tracked yacht fleet in safe-haven waters",
-      "date": "2026-10-03",
+      "date": "2026-10-04",
       "value": "1 of 1 tracked",
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0,
@@ -68,11 +68,6 @@
     }
   },
   "history": [
-    {
-      "timestamp": "2026-09-02T09:43:19.408528+00:00",
-      "level": 1,
-      "avg_z_score": 0.4
-    },
     {
       "timestamp": "2026-09-02T14:36:34.545525+00:00",
       "level": 1,
@@ -967,6 +962,11 @@
       "timestamp": "2026-10-03T23:08:47.765813+00:00",
       "level": 2,
       "avg_z_score": 0.84
+    },
+    {
+      "timestamp": "2026-10-04T02:43:18.982685+00:00",
+      "level": 1,
+      "avg_z_score": 0.73
     }
   ]
 }
