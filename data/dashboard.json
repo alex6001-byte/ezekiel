@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-09T20:15:29.435774+00:00",
+  "generated_at": "2026-10-10T00:09:30.865064+00:00",
   "level": 1,
-  "avg_z_score": -0.22,
+  "avg_z_score": -0.31,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
       "date": "2026-10-08",
       "value": 639,
-      "baseline_mean": 1117.5,
-      "z_score": -0.86
+      "baseline_mean": 1126.4,
+      "z_score": -0.87
     },
     "google_trends": {
       "label": "Wikipedia pageviews panic-article basket",
@@ -18,10 +18,10 @@
         "Potassium_iodide",
         "Evacuation"
       ],
-      "date": "2026-10-07",
-      "value": 713.0,
-      "baseline_mean": 755.2,
-      "z_score": -0.39
+      "date": "2026-10-08",
+      "value": 684.0,
+      "baseline_mean": 754.8,
+      "z_score": -0.65
     },
     "vix": {
       "label": "VIX (CBOE volatility index)",
@@ -32,14 +32,14 @@
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
-      "date": "2026-10-09",
-      "value": 1,
+      "date": "2026-10-10",
+      "value": 0,
       "baseline_mean": "0-1 (typical)",
-      "z_score": 0.3
+      "z_score": 0.0
     },
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "value": "6.5%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 0.5,
@@ -54,7 +54,7 @@
     },
     "yacht_fleet": {
       "label": "Tracked yacht fleet in safe-haven waters",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "value": "0 of 1 tracked",
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0,
@@ -63,11 +63,6 @@
     }
   },
   "history": [
-    {
-      "timestamp": "2026-09-06T01:02:44.179846+00:00",
-      "level": 1,
-      "avg_z_score": -0.14
-    },
     {
       "timestamp": "2026-09-06T06:03:34.421484+00:00",
       "level": 1,
@@ -962,6 +957,11 @@
       "timestamp": "2026-10-09T20:15:29.435774+00:00",
       "level": 1,
       "avg_z_score": -0.22
+    },
+    {
+      "timestamp": "2026-10-10T00:09:30.865064+00:00",
+      "level": 1,
+      "avg_z_score": -0.31
     }
   ]
 }
