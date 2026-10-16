@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-15T23:48:51.648413+00:00",
+  "generated_at": "2026-10-16T04:34:27.881274+00:00",
   "level": 1,
-  "avg_z_score": 0.03,
+  "avg_z_score": 0.1,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
-      "date": "2026-10-14",
-      "value": 678,
-      "baseline_mean": 1112.2,
-      "z_score": -0.76
+      "date": "2026-10-15",
+      "value": 605,
+      "baseline_mean": 1076.2,
+      "z_score": -0.83
     },
     "google_trends": {
       "label": "Wikipedia pageviews panic-article basket",
@@ -18,10 +18,10 @@
         "Potassium_iodide",
         "Evacuation"
       ],
-      "date": "2026-10-13",
-      "value": 674.0,
-      "baseline_mean": 709.2,
-      "z_score": -0.4
+      "date": "2026-10-14",
+      "value": 711.0,
+      "baseline_mean": 703.6,
+      "z_score": 0.09
     },
     "vix": {
       "label": "VIX (CBOE volatility index)",
@@ -32,14 +32,14 @@
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
-      "date": "2026-10-15",
+      "date": "2026-10-16",
       "value": 0,
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0
     },
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
-      "date": "2026-10-15",
+      "date": "2026-10-16",
       "value": "7.5%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 0.5,
@@ -54,11 +54,11 @@
     },
     "yacht_fleet": {
       "label": "Tracked yacht fleet in safe-haven waters",
-      "date": "2026-10-15",
-      "value": "1 of 2 tracked",
+      "date": "2026-10-16",
+      "value": "1 of 1 tracked",
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0,
-      "positions_received": 2,
+      "positions_received": 1,
       "in_haven": [
         {
           "name": "Koru",
@@ -68,11 +68,6 @@
     }
   },
   "history": [
-    {
-      "timestamp": "2026-09-10T14:32:58.991797+00:00",
-      "level": 2,
-      "avg_z_score": 1.09
-    },
     {
       "timestamp": "2026-09-10T18:34:13.760930+00:00",
       "level": 2,
@@ -967,6 +962,11 @@
       "timestamp": "2026-10-15T23:48:51.648413+00:00",
       "level": 1,
       "avg_z_score": 0.03
+    },
+    {
+      "timestamp": "2026-10-16T04:34:27.881274+00:00",
+      "level": 1,
+      "avg_z_score": 0.1
     }
   ]
 }
