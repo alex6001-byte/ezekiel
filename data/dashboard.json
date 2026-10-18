@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T20:45:41.863470+00:00",
+  "generated_at": "2026-10-18T23:16:41.244084+00:00",
   "level": 1,
   "avg_z_score": 0.6,
   "signals": {
@@ -55,19 +55,19 @@
     "yacht_fleet": {
       "label": "Tracked yacht fleet in safe-haven waters",
       "date": "2026-10-18",
-      "value": "0 of 1 tracked",
+      "value": "1 of 2 tracked",
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0,
-      "positions_received": 1,
-      "in_haven": []
+      "positions_received": 2,
+      "in_haven": [
+        {
+          "name": "Koru",
+          "region": "New Zealand / Fiji"
+        }
+      ]
     }
   },
   "history": [
-    {
-      "timestamp": "2026-09-13T10:22:04.607225+00:00",
-      "level": 1,
-      "avg_z_score": 0.23
-    },
     {
       "timestamp": "2026-09-13T14:30:43.851995+00:00",
       "level": 1,
@@ -960,6 +960,11 @@
     },
     {
       "timestamp": "2026-10-18T20:45:41.863470+00:00",
+      "level": 1,
+      "avg_z_score": 0.6
+    },
+    {
+      "timestamp": "2026-10-18T23:16:41.244084+00:00",
       "level": 1,
       "avg_z_score": 0.6
     }
