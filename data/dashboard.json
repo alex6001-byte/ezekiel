@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-24T23:18:45.934393+00:00",
+  "generated_at": "2026-10-25T01:15:05.488912+00:00",
   "level": 1,
-  "avg_z_score": 0.54,
+  "avg_z_score": 0.69,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -18,10 +18,10 @@
         "Potassium_iodide",
         "Evacuation"
       ],
-      "date": "2026-10-22",
-      "value": 667.0,
-      "baseline_mean": 666.7,
-      "z_score": 0.0
+      "date": "2026-10-23",
+      "value": 681.0,
+      "baseline_mean": 663.6,
+      "z_score": 0.26
     },
     "vix": {
       "label": "VIX (CBOE volatility index)",
@@ -32,15 +32,15 @@
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
-      "date": "2026-10-24",
+      "date": "2026-10-25",
       "value": 0,
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0
     },
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
-      "date": "2026-10-24",
-      "value": "8.5%",
+      "date": "2026-10-25",
+      "value": "8.0%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 1.5,
       "matched_question": "US recession by end of 2026?",
@@ -48,31 +48,13 @@
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.085
+          "probability": 0.08
         }
       ]
     },
-    "yacht_fleet": {
-      "label": "Tracked yacht fleet in safe-haven waters",
-      "date": "2026-10-24",
-      "value": "1 of 1 tracked",
-      "baseline_mean": "0-1 (typical)",
-      "z_score": 0.0,
-      "positions_received": 1,
-      "in_haven": [
-        {
-          "name": "Koru",
-          "region": "New Zealand / Fiji"
-        }
-      ]
-    }
+    "yacht_fleet": null
   },
   "history": [
-    {
-      "timestamp": "2026-09-19T11:02:27.846502+00:00",
-      "level": 1,
-      "avg_z_score": -0.01
-    },
     {
       "timestamp": "2026-09-19T14:31:18.692367+00:00",
       "level": 1,
@@ -967,6 +949,11 @@
       "timestamp": "2026-10-24T23:18:45.934393+00:00",
       "level": 1,
       "avg_z_score": 0.54
+    },
+    {
+      "timestamp": "2026-10-25T01:15:05.488912+00:00",
+      "level": 1,
+      "avg_z_score": 0.69
     }
   ]
 }
