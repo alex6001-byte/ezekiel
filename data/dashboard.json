@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T00:27:19.087239+00:00",
+  "generated_at": "2026-10-26T06:16:53.378608+00:00",
   "level": 1,
   "avg_z_score": 0.36,
   "signals": {
@@ -40,7 +40,7 @@
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-10-26",
-      "value": "9.5%",
+      "value": "8.5%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 1.5,
       "matched_question": "US recession by end of 2026?",
@@ -48,31 +48,21 @@
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.095
+          "probability": 0.085
         }
       ]
     },
     "yacht_fleet": {
       "label": "Tracked yacht fleet in safe-haven waters",
       "date": "2026-10-26",
-      "value": "1 of 1 tracked",
+      "value": "0 of 1 tracked",
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0,
       "positions_received": 1,
-      "in_haven": [
-        {
-          "name": "Koru",
-          "region": "New Zealand / Fiji"
-        }
-      ]
+      "in_haven": []
     }
   },
   "history": [
-    {
-      "timestamp": "2026-09-20T11:26:45.596422+00:00",
-      "level": 1,
-      "avg_z_score": -0.09
-    },
     {
       "timestamp": "2026-09-20T16:10:15.703406+00:00",
       "level": 1,
@@ -965,6 +955,11 @@
     },
     {
       "timestamp": "2026-10-26T00:27:19.087239+00:00",
+      "level": 1,
+      "avg_z_score": 0.36
+    },
+    {
+      "timestamp": "2026-10-26T06:16:53.378608+00:00",
       "level": 1,
       "avg_z_score": 0.36
     }
