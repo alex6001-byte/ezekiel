@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T20:11:45.704467+00:00",
+  "generated_at": "2026-10-27T23:53:19.947259+00:00",
   "level": 1,
   "avg_z_score": -0.08,
   "signals": {
@@ -26,17 +26,11 @@
     "vix": {
       "label": "VIX (CBOE volatility index)",
       "date": "2026-10-27",
-      "value": 17.43,
+      "value": 17.52,
       "baseline_mean": 16.3,
-      "z_score": 0.75
+      "z_score": 0.81
     },
-    "e4b_command_post": {
-      "label": "E-4B Nightwatch fleet airborne",
-      "date": "2026-10-27",
-      "value": 0,
-      "baseline_mean": "0-1 (typical)",
-      "z_score": 0.0
-    },
+    "e4b_command_post": null,
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-10-27",
@@ -55,10 +49,10 @@
     "yacht_fleet": {
       "label": "Tracked yacht fleet in safe-haven waters",
       "date": "2026-10-27",
-      "value": "1 of 1 tracked",
+      "value": "1 of 2 tracked",
       "baseline_mean": "0-1 (typical)",
       "z_score": 0.0,
-      "positions_received": 1,
+      "positions_received": 2,
       "in_haven": [
         {
           "name": "Koru",
@@ -68,11 +62,6 @@
     }
   },
   "history": [
-    {
-      "timestamp": "2026-09-21T21:11:04.799077+00:00",
-      "level": 1,
-      "avg_z_score": -0.26
-    },
     {
       "timestamp": "2026-09-22T00:13:10.511881+00:00",
       "level": 1,
@@ -965,6 +954,11 @@
     },
     {
       "timestamp": "2026-10-27T20:11:45.704467+00:00",
+      "level": 1,
+      "avg_z_score": -0.08
+    },
+    {
+      "timestamp": "2026-10-27T23:53:19.947259+00:00",
       "level": 1,
       "avg_z_score": -0.08
     }
