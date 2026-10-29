@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T17:02:55.284762+00:00",
+  "generated_at": "2026-10-29T21:55:33.305330+00:00",
   "level": 1,
-  "avg_z_score": 0.08,
+  "avg_z_score": 0.27,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -26,21 +26,21 @@
     "vix": {
       "label": "VIX (CBOE volatility index)",
       "date": "2026-10-29",
-      "value": 16.31,
+      "value": 17.2,
       "baseline_mean": 16.29,
-      "z_score": 0.02
+      "z_score": 0.61
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
       "date": "2026-10-29",
-      "value": 0,
+      "value": 1,
       "baseline_mean": "0-1 (typical)",
-      "z_score": 0.0
+      "z_score": 0.3
     },
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-10-29",
-      "value": "5.5%",
+      "value": "7.0%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 0.5,
       "matched_question": "US recession by end of 2026?",
@@ -48,26 +48,13 @@
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.055
+          "probability": 0.07
         }
       ]
     },
-    "yacht_fleet": {
-      "label": "Tracked yacht fleet in safe-haven waters",
-      "date": "2026-10-29",
-      "value": "0 of 1 tracked",
-      "baseline_mean": "0-1 (typical)",
-      "z_score": 0.0,
-      "positions_received": 1,
-      "in_haven": []
-    }
+    "yacht_fleet": null
   },
   "history": [
-    {
-      "timestamp": "2026-09-23T06:04:33.333752+00:00",
-      "level": 1,
-      "avg_z_score": 0.06
-    },
     {
       "timestamp": "2026-09-23T11:38:32.199387+00:00",
       "level": 1,
@@ -962,6 +949,11 @@
       "timestamp": "2026-10-29T17:02:55.284762+00:00",
       "level": 1,
       "avg_z_score": 0.08
+    },
+    {
+      "timestamp": "2026-10-29T21:55:33.305330+00:00",
+      "level": 1,
+      "avg_z_score": 0.27
     }
   ]
 }
