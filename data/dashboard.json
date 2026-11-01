@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-01T09:19:54.692917+00:00",
+  "generated_at": "2026-11-01T16:07:46.584291+00:00",
   "level": 2,
-  "avg_z_score": 1.07,
+  "avg_z_score": 0.89,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -52,14 +52,22 @@
         }
       ]
     },
-    "yacht_fleet": null
+    "yacht_fleet": {
+      "label": "Tracked yacht fleet in safe-haven waters",
+      "date": "2026-11-01",
+      "value": "1 of 2 tracked",
+      "baseline_mean": "0-1 (typical)",
+      "z_score": 0.0,
+      "positions_received": 2,
+      "in_haven": [
+        {
+          "name": "Koru",
+          "region": "New Zealand / Fiji"
+        }
+      ]
+    }
   },
   "history": [
-    {
-      "timestamp": "2026-09-25T13:52:03.696369+00:00",
-      "level": 1,
-      "avg_z_score": -0.01
-    },
     {
       "timestamp": "2026-09-25T18:42:46.357076+00:00",
       "level": 1,
@@ -954,6 +962,11 @@
       "timestamp": "2026-11-01T09:19:54.692917+00:00",
       "level": 2,
       "avg_z_score": 1.07
+    },
+    {
+      "timestamp": "2026-11-01T16:07:46.584291+00:00",
+      "level": 2,
+      "avg_z_score": 0.89
     }
   ]
 }
