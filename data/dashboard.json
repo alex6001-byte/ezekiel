@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-10T08:31:22.239434+00:00",
+  "generated_at": "2026-11-10T22:29:02.498818+00:00",
   "level": 1,
-  "avg_z_score": 0.24,
+  "avg_z_score": 0.2,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -25,10 +25,10 @@
     },
     "vix": {
       "label": "VIX (CBOE volatility index)",
-      "date": "2026-11-09",
-      "value": 19.92,
-      "baseline_mean": 17.75,
-      "z_score": 0.72
+      "date": "2026-11-10",
+      "value": 19.46,
+      "baseline_mean": 17.88,
+      "z_score": 0.52
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
@@ -40,7 +40,7 @@
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-11-10",
-      "value": "3.8%",
+      "value": "4.0%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 0.5,
       "matched_question": "US recession by end of 2026?",
@@ -48,7 +48,7 @@
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.038
+          "probability": 0.04
         }
       ]
     },
@@ -63,11 +63,6 @@
     }
   },
   "history": [
-    {
-      "timestamp": "2026-10-02T15:54:25.210688+00:00",
-      "level": 1,
-      "avg_z_score": 0.2
-    },
     {
       "timestamp": "2026-10-02T20:50:06.792508+00:00",
       "level": 1,
@@ -962,6 +957,11 @@
       "timestamp": "2026-11-10T08:31:22.239434+00:00",
       "level": 1,
       "avg_z_score": 0.24
+    },
+    {
+      "timestamp": "2026-11-10T22:29:02.498818+00:00",
+      "level": 1,
+      "avg_z_score": 0.2
     }
   ]
 }
