@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-12T18:23:14.887790+00:00",
+  "generated_at": "2026-11-12T23:46:53.468729+00:00",
   "level": 1,
-  "avg_z_score": 0.18,
+  "avg_z_score": 0.26,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -26,21 +26,21 @@
     "vix": {
       "label": "VIX (CBOE volatility index)",
       "date": "2026-11-12",
-      "value": 17.59,
+      "value": 18.7,
       "baseline_mean": 18.03,
-      "z_score": -0.15
+      "z_score": 0.22
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
       "date": "2026-11-12",
-      "value": 0,
+      "value": 1,
       "baseline_mean": "0-1 (typical)",
-      "z_score": 0.0
+      "z_score": 0.3
     },
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-11-12",
-      "value": "2.1%",
+      "value": "2.2%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 0.0,
       "matched_question": "US recession by end of 2026?",
@@ -48,18 +48,26 @@
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.021
+          "probability": 0.022
         }
       ]
     },
-    "yacht_fleet": null
+    "yacht_fleet": {
+      "label": "Tracked yacht fleet in safe-haven waters",
+      "date": "2026-11-12",
+      "value": "1 of 2 tracked",
+      "baseline_mean": "0-1 (typical)",
+      "z_score": 0.0,
+      "positions_received": 2,
+      "in_haven": [
+        {
+          "name": "Koru",
+          "region": "New Zealand / Fiji"
+        }
+      ]
+    }
   },
   "history": [
-    {
-      "timestamp": "2026-10-03T23:08:47.765813+00:00",
-      "level": 2,
-      "avg_z_score": 0.84
-    },
     {
       "timestamp": "2026-10-04T02:43:18.982685+00:00",
       "level": 1,
@@ -954,6 +962,11 @@
       "timestamp": "2026-11-12T18:23:14.887790+00:00",
       "level": 1,
       "avg_z_score": 0.18
+    },
+    {
+      "timestamp": "2026-11-12T23:46:53.468729+00:00",
+      "level": 1,
+      "avg_z_score": 0.26
     }
   ]
 }
