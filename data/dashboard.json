@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T10:25:13.429453+00:00",
+  "generated_at": "2026-11-14T16:46:08.669113+00:00",
   "level": 1,
   "avg_z_score": 0.33,
   "signals": {
@@ -33,9 +33,9 @@
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
       "date": "2026-11-14",
-      "value": 0,
+      "value": 1,
       "baseline_mean": "0-1 (typical)",
-      "z_score": 0.0
+      "z_score": 0.3
     },
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
@@ -52,14 +52,17 @@
         }
       ]
     },
-    "yacht_fleet": null
+    "yacht_fleet": {
+      "label": "Tracked yacht fleet in safe-haven waters",
+      "date": "2026-11-14",
+      "value": "0 of 1 tracked",
+      "baseline_mean": "0-1 (typical)",
+      "z_score": 0.0,
+      "positions_received": 1,
+      "in_haven": []
+    }
   },
   "history": [
-    {
-      "timestamp": "2026-10-05T02:05:58.695763+00:00",
-      "level": 2,
-      "avg_z_score": 1.05
-    },
     {
       "timestamp": "2026-10-05T09:06:41.780638+00:00",
       "level": 2,
@@ -952,6 +955,11 @@
     },
     {
       "timestamp": "2026-11-14T10:25:13.429453+00:00",
+      "level": 1,
+      "avg_z_score": 0.33
+    },
+    {
+      "timestamp": "2026-11-14T16:46:08.669113+00:00",
       "level": 1,
       "avg_z_score": 0.33
     }
