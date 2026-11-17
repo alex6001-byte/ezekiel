@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17T13:25:02.670833+00:00",
+  "generated_at": "2026-11-17T21:47:25.724157+00:00",
   "level": 1,
-  "avg_z_score": 0.48,
+  "avg_z_score": 0.75,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -26,9 +26,9 @@
     "vix": {
       "label": "VIX (CBOE volatility index)",
       "date": "2026-11-17",
-      "value": 22.85,
+      "value": 25.46,
       "baseline_mean": 18.49,
-      "z_score": 1.44
+      "z_score": 2.31
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
@@ -40,7 +40,7 @@
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-11-17",
-      "value": "2.3%",
+      "value": "2.4%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 0.0,
       "matched_question": "US recession by end of 2026?",
@@ -48,31 +48,13 @@
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.023
+          "probability": 0.024
         }
       ]
     },
-    "yacht_fleet": {
-      "label": "Tracked yacht fleet in safe-haven waters",
-      "date": "2026-11-17",
-      "value": "1 of 1 tracked",
-      "baseline_mean": "0-1 (typical)",
-      "z_score": 0.0,
-      "positions_received": 1,
-      "in_haven": [
-        {
-          "name": "Koru",
-          "region": "New Zealand / Fiji"
-        }
-      ]
-    }
+    "yacht_fleet": null
   },
   "history": [
-    {
-      "timestamp": "2026-10-08T00:19:14.554358+00:00",
-      "level": 1,
-      "avg_z_score": -0.13
-    },
     {
       "timestamp": "2026-10-08T06:06:09.293095+00:00",
       "level": 1,
@@ -967,6 +949,11 @@
       "timestamp": "2026-11-17T13:25:02.670833+00:00",
       "level": 1,
       "avg_z_score": 0.48
+    },
+    {
+      "timestamp": "2026-11-17T21:47:25.724157+00:00",
+      "level": 1,
+      "avg_z_score": 0.75
     }
   ]
 }
