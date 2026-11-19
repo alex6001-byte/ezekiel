@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T13:06:10.163827+00:00",
-  "level": 2,
-  "avg_z_score": 0.91,
+  "generated_at": "2026-11-19T21:28:41.333964+00:00",
+  "level": 4,
+  "avg_z_score": 2.41,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -26,25 +26,30 @@
     "vix": {
       "label": "VIX (CBOE volatility index)",
       "date": "2026-11-19",
-      "value": 22.38,
+      "value": 28.57,
       "baseline_mean": 19.15,
-      "z_score": 0.98
+      "z_score": 2.87
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
       "date": "2026-11-19",
-      "value": 1,
+      "value": 0,
       "baseline_mean": "0-1 (typical)",
-      "z_score": 0.3
+      "z_score": 0.0
     },
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-11-19",
-      "value": "2.4%",
+      "value": "78.5%",
       "baseline_mean": "low single digits (typical)",
-      "z_score": 0.0,
-      "matched_question": "US recession by end of 2026?",
+      "z_score": 5.0,
+      "matched_question": "Will Trump say \"Ukraine\" during his November 20 news conference?",
       "all_matches": [
+        {
+          "keyword": "nuclear war",
+          "question": "Will Trump say \"Ukraine\" during his November 20 news conference?",
+          "probability": 0.785
+        },
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
@@ -52,22 +57,9 @@
         }
       ]
     },
-    "yacht_fleet": {
-      "label": "Tracked yacht fleet in safe-haven waters",
-      "date": "2026-11-19",
-      "value": "0 of 1 tracked",
-      "baseline_mean": "0-1 (typical)",
-      "z_score": 0.0,
-      "positions_received": 1,
-      "in_haven": []
-    }
+    "yacht_fleet": null
   },
   "history": [
-    {
-      "timestamp": "2026-10-09T15:24:32.885354+00:00",
-      "level": 1,
-      "avg_z_score": -0.36
-    },
     {
       "timestamp": "2026-10-09T20:15:29.435774+00:00",
       "level": 1,
@@ -962,6 +954,11 @@
       "timestamp": "2026-11-19T13:06:10.163827+00:00",
       "level": 2,
       "avg_z_score": 0.91
+    },
+    {
+      "timestamp": "2026-11-19T21:28:41.333964+00:00",
+      "level": 4,
+      "avg_z_score": 2.41
     }
   ]
 }
