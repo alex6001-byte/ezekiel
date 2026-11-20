@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T03:17:34.847348+00:00",
+  "generated_at": "2026-11-20T11:29:20.355262+00:00",
   "level": 3,
-  "avg_z_score": 1.81,
+  "avg_z_score": 1.78,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -20,15 +20,15 @@
       ],
       "date": "2026-11-18",
       "value": 749.0,
-      "baseline_mean": 708.5,
-      "z_score": 0.58
+      "baseline_mean": 704.1,
+      "z_score": 0.59
     },
     "vix": {
       "label": "VIX (CBOE volatility index)",
-      "date": "2026-11-19",
-      "value": 28.44,
-      "baseline_mean": 19.15,
-      "z_score": 2.83
+      "date": "2026-11-20",
+      "value": 29.23,
+      "baseline_mean": 19.59,
+      "z_score": 2.68
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
@@ -40,7 +40,7 @@
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-11-20",
-      "value": "75.5%",
+      "value": "65.0%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 5.0,
       "matched_question": "Will Trump say \"Fake News\" during his November 20 news conference?",
@@ -48,23 +48,18 @@
         {
           "keyword": "nuclear war",
           "question": "Will Trump say \"Fake News\" during his November 20 news conference?",
-          "probability": 0.755
+          "probability": 0.65
         },
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.023
+          "probability": 0.024
         }
       ]
     },
     "yacht_fleet": null
   },
   "history": [
-    {
-      "timestamp": "2026-10-10T00:09:30.865064+00:00",
-      "level": 1,
-      "avg_z_score": -0.31
-    },
     {
       "timestamp": "2026-10-10T05:55:27.660425+00:00",
       "level": 1,
@@ -959,6 +954,11 @@
       "timestamp": "2026-11-20T03:17:34.847348+00:00",
       "level": 3,
       "avg_z_score": 1.81
+    },
+    {
+      "timestamp": "2026-11-20T11:29:20.355262+00:00",
+      "level": 3,
+      "avg_z_score": 1.78
     }
   ]
 }
