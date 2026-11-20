@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T11:29:20.355262+00:00",
-  "level": 3,
-  "avg_z_score": 1.78,
+  "generated_at": "2026-11-20T20:08:11.761228+00:00",
+  "level": 2,
+  "avg_z_score": 1.18,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -26,9 +26,9 @@
     "vix": {
       "label": "VIX (CBOE volatility index)",
       "date": "2026-11-20",
-      "value": 29.23,
+      "value": 34.57,
       "baseline_mean": 19.59,
-      "z_score": 2.68
+      "z_score": 4.16
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
@@ -40,31 +40,26 @@
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-11-20",
-      "value": "65.0%",
+      "value": "4.4%",
       "baseline_mean": "low single digits (typical)",
-      "z_score": 5.0,
-      "matched_question": "Will Trump say \"Fake News\" during his November 20 news conference?",
+      "z_score": 0.5,
+      "matched_question": "US recession by end of 2026?",
       "all_matches": [
         {
           "keyword": "nuclear war",
-          "question": "Will Trump say \"Fake News\" during his November 20 news conference?",
-          "probability": 0.65
+          "question": "Will Trump say \"Bean\" or \"Soybean\" during his November 20 news conference?",
+          "probability": 0.015
         },
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.024
+          "probability": 0.044
         }
       ]
     },
     "yacht_fleet": null
   },
   "history": [
-    {
-      "timestamp": "2026-10-10T05:55:27.660425+00:00",
-      "level": 1,
-      "avg_z_score": -0.33
-    },
     {
       "timestamp": "2026-10-10T12:34:36.319418+00:00",
       "level": 1,
@@ -959,6 +954,11 @@
       "timestamp": "2026-11-20T11:29:20.355262+00:00",
       "level": 3,
       "avg_z_score": 1.78
+    },
+    {
+      "timestamp": "2026-11-20T20:08:11.761228+00:00",
+      "level": 2,
+      "avg_z_score": 1.18
     }
   ]
 }
