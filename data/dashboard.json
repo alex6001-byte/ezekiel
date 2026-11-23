@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T07:39:41.621100+00:00",
+  "generated_at": "2026-11-23T20:17:50.558373+00:00",
   "level": 1,
-  "avg_z_score": 0.58,
+  "avg_z_score": -0.01,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
@@ -25,10 +25,10 @@
     },
     "vix": {
       "label": "VIX (CBOE volatility index)",
-      "date": "2026-11-20",
-      "value": 35.89,
-      "baseline_mean": 19.59,
-      "z_score": 4.53
+      "date": "2026-11-23",
+      "value": 27.41,
+      "baseline_mean": 20.29,
+      "z_score": 1.57
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
@@ -40,7 +40,7 @@
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-11-23",
-      "value": "2.8%",
+      "value": "2.1%",
       "baseline_mean": "low single digits (typical)",
       "z_score": 0.0,
       "matched_question": "US recession by end of 2026?",
@@ -48,18 +48,26 @@
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.028
+          "probability": 0.021
         }
       ]
     },
-    "yacht_fleet": null
+    "yacht_fleet": {
+      "label": "Tracked yacht fleet in safe-haven waters",
+      "date": "2026-11-23",
+      "value": "1 of 2 tracked",
+      "baseline_mean": "0-1 (typical)",
+      "z_score": 0.0,
+      "positions_received": 2,
+      "in_haven": [
+        {
+          "name": "Koru",
+          "region": "New Zealand / Fiji"
+        }
+      ]
+    }
   },
   "history": [
-    {
-      "timestamp": "2026-10-12T10:50:25.666152+00:00",
-      "level": 1,
-      "avg_z_score": -0.45
-    },
     {
       "timestamp": "2026-10-12T20:24:45.361881+00:00",
       "level": 1,
@@ -954,6 +962,11 @@
       "timestamp": "2026-11-23T07:39:41.621100+00:00",
       "level": 1,
       "avg_z_score": 0.58
+    },
+    {
+      "timestamp": "2026-11-23T20:17:50.558373+00:00",
+      "level": 1,
+      "avg_z_score": -0.01
     }
   ]
 }
