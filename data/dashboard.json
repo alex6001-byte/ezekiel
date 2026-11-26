@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-26T02:49:11.798009+00:00",
+  "generated_at": "2026-11-26T12:22:42.500163+00:00",
   "level": 1,
-  "avg_z_score": 0.43,
+  "avg_z_score": 0.13,
   "signals": {
     "sec_insider_filings": {
       "label": "SEC Form 4 filings (insider transactions)",
-      "date": "2026-11-24",
-      "value": 1366,
-      "baseline_mean": 1000.5,
-      "z_score": 0.86
+      "date": "2026-11-25",
+      "value": 1132,
+      "baseline_mean": 1013.1,
+      "z_score": 0.28
     },
     "google_trends": {
       "label": "Wikipedia pageviews panic-article basket",
@@ -25,10 +25,10 @@
     },
     "vix": {
       "label": "VIX (CBOE volatility index)",
-      "date": "2026-11-25",
-      "value": 28.29,
-      "baseline_mean": 21.04,
-      "z_score": 1.59
+      "date": "2026-11-26",
+      "value": 26.88,
+      "baseline_mean": 21.42,
+      "z_score": 1.17
     },
     "e4b_command_post": {
       "label": "E-4B Nightwatch fleet airborne",
@@ -40,26 +40,21 @@
     "polymarket_odds": {
       "label": "Polymarket crisis-question odds",
       "date": "2026-11-26",
-      "value": "3.2%",
+      "value": "2.6%",
       "baseline_mean": "low single digits (typical)",
-      "z_score": 0.5,
+      "z_score": 0.0,
       "matched_question": "US recession by end of 2026?",
       "all_matches": [
         {
           "keyword": "us recession",
           "question": "US recession by end of 2026?",
-          "probability": 0.032
+          "probability": 0.026
         }
       ]
     },
     "yacht_fleet": null
   },
   "history": [
-    {
-      "timestamp": "2026-10-14T07:41:38.003675+00:00",
-      "level": 1,
-      "avg_z_score": 0.05
-    },
     {
       "timestamp": "2026-10-14T13:49:09.363094+00:00",
       "level": 1,
@@ -954,6 +949,11 @@
       "timestamp": "2026-11-26T02:49:11.798009+00:00",
       "level": 1,
       "avg_z_score": 0.43
+    },
+    {
+      "timestamp": "2026-11-26T12:22:42.500163+00:00",
+      "level": 1,
+      "avg_z_score": 0.13
     }
   ]
 }
